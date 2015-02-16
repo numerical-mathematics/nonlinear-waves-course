@@ -1,12 +1,24 @@
 # nonlinear-waves-course
 Material for KAUST Spring 2015 course AMCS 394B
 
-Instructor: David Ketcheson
+## Instructor  
+David Ketcheson
 
-Students:
+## Students 
+Dmitry Kabanov  
+Adriano Cortes  
+Yiannis Hadjimichael  
 
-Dmitry Kabanov
+## Installing JSAnimation
 
-Adriano Cortes
+If you're working locally, the easiest way to get it is
 
-Yiannis Hadjimichael
+    git clone https://github.com/jakevdp/JSAnimation.git
+    cd JSAnimation
+    python setup.py install
+    
+after which you can
+
+```python
+    from JSAnimation import IPython_display
+```
