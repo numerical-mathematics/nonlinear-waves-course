@@ -8,6 +8,7 @@ David Ketcheson
 Dmitry Kabanov  
 Adriano Cortes  
 Yiannis Hadjimichael  
+Lajos Lóczi
 
 ## Installing JSAnimation
 
