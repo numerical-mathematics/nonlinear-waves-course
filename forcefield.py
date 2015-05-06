@@ -16,6 +16,20 @@ e is internal energy.
 
 A blast wave is approaching!  Can you stop it by heating the air between you (at x=9)
 and it (at 1<x<2) ?
+
+To run the code in IPython:
+
+    >>> run forcefield.py
+
+This will print out the maximum pressure reached at x=9.
+You can plot pressure versus time via
+
+    >>> import matplotlib.pyplot as plt
+    >>> plt.plot(t,p)
+
+You can also plot the solution itself via
+
+    >>> claw.plot()
 """
 import numpy as np
 from clawpack import riemann
@@ -75,6 +89,7 @@ state.problem_data['gamma'] = gamma
 xc = state.grid.x.centers
 
 pressure = 1. + (xc>1)*(xc<2)* 1000.  # Modify this line
+# You can change anything except the velocity in the interval (3,8)
 
 state.q[density ,:] = 1.
 state.q[momentum,:] = 0.
